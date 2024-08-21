@@ -1,0 +1,61 @@
+// Header
+.header {
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+
+// Header Top
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+// Contacts
+.contacts {
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.email a, .phone a {
+    font-size: 20px;
+    font-weight: 600;
+    color: $accent;
+}
+
+.email a {
+    text-decoration: underline;
+}
+
+// Header Bottom
+.header__bottom {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 44px;
+}
+
+.nav-list:first-child {
+    padding-left: 0;
+}
+
+.call {
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $accent;
+}
+
+.call img {
+    position: absolute;
+    left: -20px;
+    top: 0;
+}

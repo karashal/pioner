@@ -1,0 +1,15 @@
+// Base
+@import 'normalize.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'core.scss';
+
+// Blocks
+@import 'blocks/header.scss';
+@import 'blocks/intro.scss';
+@import 'blocks/about.scss';
+@import 'blocks/products.scss';
+@import 'blocks/representation.scss';
+@import 'blocks/news.scss';
+@import 'blocks/footer.scss';

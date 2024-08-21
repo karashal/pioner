@@ -1,0 +1,39 @@
+// Footer
+.footer {
+    background-color: $dark;
+    color: $light;
+}
+
+.footer a {
+    color: $light;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 24px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 0 73px 0;
+}
+
+.footer__logo {
+    width: 45%;
+}
+
+.footer__nav {
+    width: 55%;
+    display: flex;
+    gap: 25px;
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 16px;
+}

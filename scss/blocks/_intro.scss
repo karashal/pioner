@@ -1,0 +1,28 @@
+// Intro
+.intro {
+    margin: 80px 0;
+}
+
+// Intro Text
+.intro__text {
+    display: flex;
+    align-items: center;
+}
+
+.intro__text h1 {
+    width: 570px;
+    font-size: 60px;
+    margin-right: 100px;
+    margin-bottom: 32px;
+}
+
+.intro__text p {
+    width: 350px;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+// Intro Image
+.intro__image {
+    text-align: center;
+}

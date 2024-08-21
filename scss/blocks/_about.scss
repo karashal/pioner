@@ -1,0 +1,26 @@
+.about {
+    margin-bottom: 80px;
+}
+
+.about__text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__text p {
+    width: 580px;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-right: 20px;
+    margin-bottom: 32px;
+}
+
+.about__images {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.about__image img {
+    width: 580px;
+}
