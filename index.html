@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="images/x-icon" href="assets/icons/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -12,44 +13,54 @@
         <!-- Container -->
         <div class="container">
 
-            <!-- Header Top -->
-            <div class="header__top">
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="#"><img src="assets/icons/logo.svg" alt="Пионер"></a>
-                </div> <!-- /.logo -->
-                <!-- Contacts -->
-                <div class="contacts">
-                    <div class="email">
-                        <p>По вопросам и предложениям<br>
-                        <a href="#">pionerrr@sila.ru</a></p>
+            <!-- Header Nav -->
+            <div class="header__nav">
+
+                <!-- Header Top -->
+                <div class="header__top">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#"><img src="assets/icons/logo.svg" alt="Пионер"></a>
+                    </div> <!-- /.logo -->
+                    <!-- Contacts -->
+                    <div class="contacts">
+                        <div class="email">
+                            <p>По вопросам и предложениям<br>
+                            <a href="#">pionerrr@sila.ru</a></p>
+                        </div>
+                        <div class="phone">
+                            <p>Для консультации<br>
+                            <a href="#">+7 (495) 456-24-21</a></p>
+                        </div>
+                    </div> <!-- /.contacts -->
+                </div> <!-- /.header top -->
+                
+                <hr>
+                
+                <!-- Header Bottom -->
+                <nav id="nav" class="header__bottom open">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">О предприятии</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Поддержка</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">География поставок</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                    </ul>
+                    <div class="call">
+                        <img src="assets/icons/phone.svg" alt="Phone">
+                        Перезвоните мне
                     </div>
-                    <div class="phone">
-                        <p>Для консультации<br>
-                        <a href="#">+7 (495) 456-24-21</a></p>
-                    </div>
-                </div> <!-- /.contacts -->
-            </div> <!-- /.header top -->
-            
-            <hr>
-            
-            <!-- Header Bottom -->
-            <div class="header__bottom">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">О предприятии</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Продукция</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Услуги</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Поддержка</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">География поставок</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-                </ul>
-                <div class="call">
-                    <img src="assets/icons/phone.svg" alt="Phone">
-                    Перезвоните мне
-                </div>
-            </div> <!-- /.header bottom -->
+                    <!-- Nav Button -->
+                    <!-- for mobile -->
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="assets/icons/nav-open.svg" alt="Nav Button">
+                    </button> <!-- /.nav-button -->
+                </nav> <!-- /.header bottom -->
+
+            </div> <!-- /.header nav -->
 
         </div> <!-- /.container -->
     </header> <!-- /.header -->
@@ -57,7 +68,7 @@
     <main class="main">
 
         <!-- Intro -->
-        <div class="intro">
+        <section class="intro">
         <!-- Container -->
             <div class="container">
 
@@ -75,10 +86,10 @@
                 </div> <!-- /.intro image -->
             
             </div> <!-- /.container -->
-        </div> <!-- /.intro -->
+        </section> <!-- /.intro -->
     
         <!-- About -->
-        <div class="about">
+        <section class="about">
             <!-- Container -->
             <div class="container">
             
@@ -123,10 +134,10 @@
                 </div> <!-- /.about inner -->
 
             </div> <!-- /.container -->
-        </div> <!-- /.about -->
+        </section> <!-- /.about -->
     
         <!-- Products -->
-        <div class="products">
+        <section class="products">
             <!-- Container -->
             <div class="container">
             
@@ -191,10 +202,10 @@
                 </div> <!-- /.products cards -->
             
             </div> <!-- /.container -->
-        </div> <!-- /.products -->
+        </section> <!-- /.products -->
 
         <!-- Represantation -->
-        <div class="representation">
+        <section class="representation">
             <!-- Container -->
             <div class="container">
 
@@ -204,10 +215,10 @@
                 </div>
 
             </div> <!-- /.container -->
-        </div> <!-- /.represantation -->
+        </section> <!-- /.represantation -->
 
         <!-- News -->
-        <div class="news">
+        <section class="news">
             <!-- Container -->
             <div class="container">
 
@@ -266,7 +277,7 @@
                 </div> <!-- /.news cards -->
 
             </div> <!-- /.container -->
-        </div> <!-- /.news -->
+        </section> <!-- /.news -->
     
     </main> <!-- /.main -->
 
@@ -280,11 +291,11 @@
 
                 <!-- Footer Logo -->
                 <div class="footer__logo">
-                    <a href="#"><img src="assets/icons/logo.svg" alt="Пионер"></a>
+                    <a href="#"><img src="assets/icons/footer-logo.svg" alt="Пионер"></a>
                 </div> <!-- /.footer logo -->
     
                 <!-- Footer Nav -->
-                <div class="footer__nav">
+                <nav class="footer__nav">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item"><a href="#" class="footer__nav-link">Главная</a></li>
                         <li class="footer__nav-item"><a href="#" class="footer__nav-link">О предприятии</a></li>
@@ -302,7 +313,7 @@
                         <li class="footer__nav-item"><a href="#" class="footer__nav-link">Поддержка</a></li>
                         <li class="footer__nav-item"><a href="#" class="footer__nav-link">Политика конфеденциальности</a></li>
                     </ul>
-                </div> <!-- /.footer nav -->
+                </nav> <!-- /.footer nav -->
             
             </div> <!-- /.footer content -->
 
@@ -311,6 +322,9 @@
 
         </div> <!-- /.container -->
     </footer> <!-- /.footer -->
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
     
 </body>
 </html>

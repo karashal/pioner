@@ -342,10 +342,19 @@ button {
   font-size: 20px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
-  max-width: 1220px;
+  max-width: 1280px;
   padding: 0 20px;
   margin: 0 auto;
+  border: 1px solid purple;
+}
+
+.nav-button {
+  display: none;
 }
 
 .header {
@@ -388,9 +397,12 @@ button {
   display: flex;
   gap: 44px;
 }
-
 .nav-list:first-child {
   padding-left: 0;
+}
+
+.nav-link.active {
+  color: #607CE6;
 }
 
 .call {
@@ -418,7 +430,7 @@ button {
 .intro__text h1 {
   width: 570px;
   font-size: 60px;
-  margin-right: 100px;
+  margin-right: 140px;
   margin-bottom: 32px;
 }
 
@@ -595,4 +607,100 @@ button {
   flex-direction: column;
   gap: 24px;
   font-size: 16px;
+}
+
+@media (max-width: 1260px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__nav .logo {
+    padding-top: 20px;
+  }
+  .header__nav hr {
+    display: none;
+  }
+  .header__nav .header__bottom.open .nav-list {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    z-index: 1;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .header__nav .header__bottom.open .nav-button {
+    position: fixed;
+  }
+  .header__nav .nav-button {
+    display: block;
+  }
+  .header__nav .nav-list, .header__nav .call, .header__nav .contacts {
+    display: none;
+  }
+  .header__nav .nav-button {
+    position: absolute;
+    z-index: 9;
+    top: 60px;
+    right: 30px;
+  }
+  .header__nav .nav-button img {
+    width: 30px;
+    height: 30px;
+  }
+  .intro__text {
+    display: block;
+    text-align: center;
+  }
+  .intro__text h1, .intro__text p {
+    width: 100%;
+  }
+  .intro__text h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .intro__text h1 {
+    font-size: 38px;
+    margin-bottom: 18px;
+  }
+  .intro__text p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .intro__text h1 {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+  .intro__text p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .intro__text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .intro__text p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 430px) {
+  .intro__text h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .intro__text p {
+    font-size: 6px;
+  }
 }
